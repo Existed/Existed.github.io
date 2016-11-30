@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Wang's Blog]]></title>
   <link href="http://existed.github.io/atom.xml" rel="self"/>
   <link href="http://existed.github.io/"/>
-  <updated>2016-11-30T15:23:03+08:00</updated>
+  <updated>2016-11-30T19:48:53+08:00</updated>
   <id>http://existed.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Leon Wang]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First Article]]></title>
+    <link href="http://existed.github.io/blog/2016/11/30/first-article/"/>
+    <updated>2016-11-30T18:39:13+08:00</updated>
+    <id>http://existed.github.io/blog/2016/11/30/first-article</id>
+    <content type="html"><![CDATA[<p><code>Hello
+</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'>  <span class="bp">CGRect</span> <span class="n">screen</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIScreen</span> <span class="n">mainScreen</span><span class="p">]</span> <span class="n">bounds</span><span class="p">];</span>
+</span><span class='line'>  <span class="n">_window</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIWindow</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">screen</span><span class="p">];</span>
+</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="nl">setRooterViewController</span><span class="p">:[[</span><span class="n">ViewController</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">]];</span>
+</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="n">makeKeyAndVisible</span><span class="p">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
