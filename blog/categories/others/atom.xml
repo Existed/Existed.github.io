@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Others | Wang's Blog]]></title>
   <link href="http://existed.github.io/blog/categories/others/atom.xml" rel="self"/>
   <link href="http://existed.github.io/"/>
-  <updated>2016-11-30T19:48:53+08:00</updated>
+  <updated>2016-12-01T13:04:46+08:00</updated>
   <id>http://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -23,7 +23,7 @@
 
 <pre><code class="objective-c">  CGRect screen = [[UIScreen mainScreen] bounds];
   _window = [[UIWindow alloc] initWithFrame:screen];
-  [_window setRooterViewController:[[ViewController alloc] init]];
+  [_window setRootViewController:[[ViewController alloc] init]];
   [_window makeKeyAndVisible];
 </code></pre>
 ]]></content>

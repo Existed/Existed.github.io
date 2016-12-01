@@ -4,7 +4,7 @@
   <title><![CDATA[Wang's Blog]]></title>
   <link href="http://existed.github.io/atom.xml" rel="self"/>
   <link href="http://existed.github.io/"/>
-  <updated>2016-11-30T19:48:53+08:00</updated>
+  <updated>2016-12-01T13:04:46+08:00</updated>
   <id>http://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -27,7 +27,7 @@
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='objective-c'><span class='line'>  <span class="bp">CGRect</span> <span class="n">screen</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIScreen</span> <span class="n">mainScreen</span><span class="p">]</span> <span class="n">bounds</span><span class="p">];</span>
 </span><span class='line'>  <span class="n">_window</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIWindow</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">screen</span><span class="p">];</span>
-</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="nl">setRooterViewController</span><span class="p">:[[</span><span class="n">ViewController</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">]];</span>
+</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="nl">setRootViewController</span><span class="p">:[[</span><span class="n">ViewController</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">]];</span>
 </span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="n">makeKeyAndVisible</span><span class="p">];</span>
 </span></code></pre></td></tr></table></div></figure>
 
