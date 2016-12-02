@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://existed.github.io/sitemap.xml 
+Sitemap: https://existed.github.io/sitemap.xml 
