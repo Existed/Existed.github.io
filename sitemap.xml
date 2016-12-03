@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://existed.github.io/blog/2016/12/03/xia-zhe-teng-uefiqi-dong-fedora22-plus-windows8-dot-1shuang-xi-tong/</loc>
+<lastmod>2016-12-03T18:35:39+08:00</lastmod>
+</url>
+<url>
 <loc>https://existed.github.io/blog/2016/11/30/first-article/</loc>
 <lastmod>2016-11-30T18:39:13+08:00</lastmod>
 </url>
@@ -12,5 +16,8 @@
 </url>
 <url>
 <loc>https://existed.github.io/blog/categories/others/</loc>
+</url>
+<url>
+<loc>https://existed.github.io/blog/categories/linux/</loc>
 </url>
 </urlset>
