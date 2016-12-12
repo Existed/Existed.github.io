@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ios | Wang's Blog]]></title>
+  <link href="https://existed.github.io/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="https://existed.github.io/"/>
+  <updated>2016-12-12T18:33:23+08:00</updated>
+  <id>https://existed.github.io/</id>
+  <author>
+    <name><![CDATA[Leon Wang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iOS中的UINavigationController]]></title>
+    <link href="https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller/"/>
+    <updated>2016-12-12T18:14:42+08:00</updated>
+    <id>https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller</id>
+    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/496668219long/p/4472195.html">http://www.cnblogs.com/496668219long/p/4472195.html</a></p>
+]]></content>
+  </entry>
+  
+</feed>

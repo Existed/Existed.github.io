@@ -4,7 +4,7 @@
   <title><![CDATA[Wang's Blog]]></title>
   <link href="https://existed.github.io/atom.xml" rel="self"/>
   <link href="https://existed.github.io/"/>
-  <updated>2016-12-03T19:04:46+08:00</updated>
+  <updated>2016-12-12T18:33:23+08:00</updated>
   <id>https://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS中的UINavigationController]]></title>
+    <link href="https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller/"/>
+    <updated>2016-12-12T18:14:42+08:00</updated>
+    <id>https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller</id>
+    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/496668219long/p/4472195.html">http://www.cnblogs.com/496668219long/p/4472195.html</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[[瞎折腾] UEFI启动Fedora22+Windows8.1双系统]]></title>
