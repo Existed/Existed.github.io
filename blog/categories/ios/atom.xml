@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ios | Wang's Blog]]></title>
   <link href="https://existed.github.io/blog/categories/ios/atom.xml" rel="self"/>
   <link href="https://existed.github.io/"/>
-  <updated>2016-12-12T18:57:17+08:00</updated>
+  <updated>2017-03-11T11:11:23+08:00</updated>
   <id>https://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[[笔记]UITableView &amp; UITableViewController]]></title>
+    <link href="https://existed.github.io/blog/2016/12/22/uitableview-and-uitableviewcontroller/"/>
+    <updated>2016-12-22T17:41:38+08:00</updated>
+    <id>https://existed.github.io/blog/2016/12/22/uitableview-and-uitableviewcontroller</id>
+    <content type="html"><![CDATA[<p>  基本的tableView: numberOfRowsInSection:、tableView: cellForRowAtIndexPath:等等就不多说了，主要记录一下UITableView的编辑模式。</p>
+
+<p>假设有一个“Edit”按键用来打开编辑模式，在编辑模式时此案件显示“Done”，为按键添加操作：
+<code>objective-c
+  - (IBAction)toggleEditingMode:(id)sender {
+      if (_list.count &gt; 0) {
+          if ([self.tableView isEditing]) {
+              [sender setTitle:@"Edit" forState:UIControlStateNormal];
+              [self.tableView setEditing:NO];
+          } else {
+              [sender setTitle:@"Done" forState:UIControlStateNormal];
+              [self.tableView setEditing:YES];
+          }
+      }
+  }
+</code></p>
+
+<!-- more -->
+
+
+<p>添加row：
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'> <span class="o">-</span> <span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span><span class="nl">addNewItem</span><span class="p">:(</span><span class="kt">id</span><span class="p">)</span><span class="n">sender</span> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span>    <span class="cm">/* Get a new item */</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">[</span><span class="n">_list</span> <span class="nl">insertObject</span><span class="p">:</span><span class="n">item</span> <span class="nl">atIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="bp">NSInteger</span> <span class="n">lastRow</span> <span class="o">=</span> <span class="p">[</span><span class="n">_list</span> <span class="nl">indexOfObject</span><span class="p">:</span><span class="n">item</span><span class="p">];</span>
+</span><span class='line'>    <span class="bp">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSIndexPath</span> <span class="nl">indexPathForRow</span><span class="p">:</span><span class="n">lastRow</span> <span class="nl">inSection</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">tableView</span> <span class="nl">insertRowsAtIndexPaths</span><span class="p">:</span><span class="l">@[</span><span class="n">indexPath</span><span class="l">]</span> <span class="nl">withRowAnimation</span><span class="p">:</span><span class="n">UITableViewRowAnimationRight</span><span class="p">];</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><img src="/images/UITableView_edit_new.jpeg"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS中的UINavigationController]]></title>
