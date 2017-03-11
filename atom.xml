@@ -4,7 +4,7 @@
   <title><![CDATA[Wang's Blog]]></title>
   <link href="https://existed.github.io/atom.xml" rel="self"/>
   <link href="https://existed.github.io/"/>
-  <updated>2017-03-11T11:11:23+08:00</updated>
+  <updated>2017-03-11T18:53:58+08:00</updated>
   <id>https://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -12,6 +12,134 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Linux Kernel Source Tree]]></title>
+    <link href="https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/"/>
+    <updated>2017-03-11T11:30:02+08:00</updated>
+    <id>https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree</id>
+    <content type="html"><![CDATA[<p>  内核源码树由很多目录组成，而大多数目录又包含很多子目录。
+  源码树根目录极其子目录如下表:</p>
+
+<!-- more -->
+
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">目录 </th>
+<th style="text-align:center;"> 描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">arch/ </td>
+<td style="text-align:center;"> 特定体系结构的源码</td>
+</tr>
+<tr>
+<td style="text-align:right;">block/ </td>
+<td style="text-align:center;"> 快设备I/O层</td>
+</tr>
+<tr>
+<td style="text-align:right;">crypto/ </td>
+<td style="text-align:center;"> 加密API</td>
+</tr>
+<tr>
+<td style="text-align:right;">Documentation/ </td>
+<td style="text-align:center;"> 内核源码文档</td>
+</tr>
+<tr>
+<td style="text-align:right;">drivers/ </td>
+<td style="text-align:center;"> 设备驱动程序</td>
+</tr>
+<tr>
+<td style="text-align:right;">firmaware/ </td>
+<td style="text-align:center;"> 某些驱动程序需要的设备固件</td>
+</tr>
+<tr>
+<td style="text-align:right;">fs/ </td>
+<td style="text-align:center;"> VFS和各种文件系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">include/ </td>
+<td style="text-align:center;"> 内核头文件</td>
+</tr>
+<tr>
+<td style="text-align:right;">init/ </td>
+<td style="text-align:center;"> 内核引导和初始化</td>
+</tr>
+<tr>
+<td style="text-align:right;">ipc/ </td>
+<td style="text-align:center;"> 进程间通信代码</td>
+</tr>
+<tr>
+<td style="text-align:right;">kernel/ </td>
+<td style="text-align:center;"> 核心子系统，例如调度程序</td>
+</tr>
+<tr>
+<td style="text-align:right;">lib/ </td>
+<td style="text-align:center;"> 通用内核函数</td>
+</tr>
+<tr>
+<td style="text-align:right;">mm/ </td>
+<td style="text-align:center;"> 内存管理子系统和VM</td>
+</tr>
+<tr>
+<td style="text-align:right;">net/ </td>
+<td style="text-align:center;"> 网络子系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">samples/ </td>
+<td style="text-align:center;"> 示例，示范代码</td>
+</tr>
+<tr>
+<td style="text-align:right;">scripts/ </td>
+<td style="text-align:center;"> 编译内核所用的脚本</td>
+</tr>
+<tr>
+<td style="text-align:right;">security/ </td>
+<td style="text-align:center;"> Linux安全模块</td>
+</tr>
+<tr>
+<td style="text-align:right;">sound/ </td>
+<td style="text-align:center;"> 语音子系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">usr/ </td>
+<td style="text-align:center;"> 早期用户空间代码(所谓的initramfs)</td>
+</tr>
+<tr>
+<td style="text-align:right;">tools/ </td>
+<td style="text-align:center;"> 在Linux开发中有用的工具</td>
+</tr>
+<tr>
+<td style="text-align:right;">virt/ </td>
+<td style="text-align:center;"> 虚拟化基础基础结构</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+
+<pre><code>在源码树根目录由很多文件值得提及：
+- COPYING文件，是内核许可证(GNU GPL v2)；
+- CREDITS，是开发了很多内核代码的开发者列表；
+- MAINTAINERS，维护者列表，他们负责维护内核子系统和驱动程序；
+- Makefile，基本内核的Makefile。
+</code></pre>
+
+<a name="L........"></a>
+<h3>[参考]</h3>
+
+<ul>
+<li>《Linux内核设计与实现》（第三版）</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[[笔记]UITableView &amp; UITableViewController]]></title>
@@ -88,7 +216,8 @@
     <link href="https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller/"/>
     <updated>2016-12-12T18:14:42+08:00</updated>
     <id>https://existed.github.io/blog/2016/12/12/ioszhong-de-uinavigationcontroller</id>
-    <content type="html"><![CDATA[<h3>参考文章：</h3>
+    <content type="html"><![CDATA[<a name="L..............."></a>
+<h3>参考文章：</h3>
 
 <p><a href="http://www.cnblogs.com/496668219long/p/4472195.html">http://www.cnblogs.com/496668219long/p/4472195.html</a></p>
 ]]></content>
@@ -104,6 +233,7 @@
 <!-- more -->
 
 
+<a name="L........"></a>
 <h2>[参考]</h2>
 
 <p>UEFI+GPT安装Windows8和CentOS双系统</p>
@@ -120,6 +250,7 @@
 
 <p>CentOS与Windows双系统安装注意事项记录 <a href="http://www.linuxidc.com/Linux/2014-05/101571.htm">http://www.linuxidc.com/Linux/2014-05/101571.htm</a></p>
 
+<a name="L1............."></a>
 <h4>1 安装步骤</h4>
 
 <p>（1）使用diskgen工具把硬盘修改为GPT格式。（可以通过带有这个工具的光盘、U盘等完成）。</p>
@@ -140,6 +271,7 @@
 
 <p>此时，ESP分区增加了/EFI/RedHat/文件夹，里面是grub.efi和grub.conf。</p>
 
+<a name="L2........................."></a>
 <h4>2 双系统启动的方式</h4>
 
 <p>目前为止，只是安装了两个系统，UEFI的nvram启动菜单有了这两个菜单项，但是这款主板启动时，只显示一个微软的选项。这就导致了只能启动Windows8，不能启动CentOS。解决思路有如下几种</p>
@@ -175,6 +307,7 @@ EFI/redhat （里面是grub启动器）</p></blockquote>
 
 <blockquote><p>UEFI+GPT安装Windows8和CentOS双系统</p></blockquote>
 
+<a name="L3.UEFI........................"></a>
 <h4>3 UEFI时代的双启动思考</h4>
 
 <p>微软依旧很霸道，所以多系统安装时，Windows要首先安装，省的它在安装是破坏别的已安装系统；
@@ -186,6 +319,7 @@ UEFI主板功能还不完善，设置修改不方便，不好用；
 
 <p>本文永久更新链接地址：<a href="http://www.linuxidc.com/Linux/2014-05/101575.htm">http://www.linuxidc.com/Linux/2014-05/101575.htm</a></p>
 
+<a name="L..........Fedora......."></a>
 <h2>[默认由Fedora引导]</h2>
 
 <p>根据上面的思路，将EFI分区的Microsoft命名为weiruan，并创建Microsoft文件夹，拷贝fedora到Microsoft目录，并重命名为Boot，修改Microsoft/Boot/grubx64.efi为bootmgfw.efi，修改同目录下的grub.cfg，将Microsoft改为weiruan。关闭UEFI的secure boot模式，OK啦～</p>
@@ -197,6 +331,7 @@ UEFI主板功能还不完善，设置修改不方便，不好用；
 </ul>
 
 
+<a name="L........"></a>
 <h2>[问题]</h2>
 
 <p>这种方式有几个问：    <br/>

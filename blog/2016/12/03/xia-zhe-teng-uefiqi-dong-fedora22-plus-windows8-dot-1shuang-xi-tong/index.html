@@ -21,6 +21,7 @@
   <link rel="canonical" href="https://existed.github.io/blog/2016/12/03/xia-zhe-teng-uefiqi-dong-fedora22-plus-windows8-dot-1shuang-xi-tong/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
   <link href="/atom.xml" rel="alternate" title="Wang's Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -104,6 +105,7 @@
 <!-- more -->
 
 
+<a name="L........"></a>
 <h2>[参考]</h2>
 
 <p>UEFI+GPT安装Windows8和CentOS双系统</p>
@@ -120,6 +122,7 @@
 
 <p>CentOS与Windows双系统安装注意事项记录 <a href="http://www.linuxidc.com/Linux/2014-05/101571.htm">http://www.linuxidc.com/Linux/2014-05/101571.htm</a></p>
 
+<a name="L1............."></a>
 <h4>1 安装步骤</h4>
 
 <p>（1）使用diskgen工具把硬盘修改为GPT格式。（可以通过带有这个工具的光盘、U盘等完成）。</p>
@@ -140,6 +143,7 @@
 
 <p>此时，ESP分区增加了/EFI/RedHat/文件夹，里面是grub.efi和grub.conf。</p>
 
+<a name="L2........................."></a>
 <h4>2 双系统启动的方式</h4>
 
 <p>目前为止，只是安装了两个系统，UEFI的nvram启动菜单有了这两个菜单项，但是这款主板启动时，只显示一个微软的选项。这就导致了只能启动Windows8，不能启动CentOS。解决思路有如下几种</p>
@@ -175,6 +179,7 @@ EFI/redhat （里面是grub启动器）</p></blockquote>
 
 <blockquote><p>UEFI+GPT安装Windows8和CentOS双系统</p></blockquote>
 
+<a name="L3.UEFI........................"></a>
 <h4>3 UEFI时代的双启动思考</h4>
 
 <p>微软依旧很霸道，所以多系统安装时，Windows要首先安装，省的它在安装是破坏别的已安装系统；
@@ -186,6 +191,7 @@ UEFI主板功能还不完善，设置修改不方便，不好用；
 
 <p>本文永久更新链接地址：<a href="http://www.linuxidc.com/Linux/2014-05/101575.htm">http://www.linuxidc.com/Linux/2014-05/101575.htm</a></p>
 
+<a name="L..........Fedora......."></a>
 <h2>[默认由Fedora引导]</h2>
 
 <p>根据上面的思路，将EFI分区的Microsoft命名为weiruan，并创建Microsoft文件夹，拷贝fedora到Microsoft目录，并重命名为Boot，修改Microsoft/Boot/grubx64.efi为bootmgfw.efi，修改同目录下的grub.cfg，将Microsoft改为weiruan。关闭UEFI的secure boot模式，OK啦～</p>
@@ -197,6 +203,7 @@ UEFI主板功能还不完善，设置修改不方便，不好用；
 </ul>
 
 
+<a name="L........"></a>
 <h2>[问题]</h2>
 
 <p>这种方式有几个问：    <br/>
@@ -264,6 +271,10 @@ UEFI主板功能还不完善，设置修改不方便，不好用；
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/03/11/linux-kernel-source-tree/">Linux Kernel Source Tree</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/12/22/uitableview-and-uitableviewcontroller/">[笔记]UITableView &amp; UITableViewController</a>

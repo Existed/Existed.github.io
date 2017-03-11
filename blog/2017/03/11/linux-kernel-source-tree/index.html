@@ -5,15 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First Article - Wang's Blog</title>
+  <title>Linux Kernel Source Tree - Wang's Blog</title>
   <meta name="author" content="Leon Wang">
 
   
-  <meta name="description" content="Hello 1
-2
-3
-4 CGRect screen = [[UIScreen mainScreen] bounds]; _window = [[UIWindow alloc] initWithFrame:screen]; [_window setRootViewController:[[ &hellip;">
-  
+  <meta name="description" content="内核源码树由很多目录组成，而大多数目录又包含很多子目录。 源码树根目录极其子目录如下表: 目录 描述 arch/ 特定体系结构的源码 block/ 快设备I/O层 crypto/ 加密API Documentation/ 内核源码文档 drivers/ 设备驱动程序 firmaware/ &hellip;">
+  <meta name="keywords" content="Linux, kernel">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -21,9 +18,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://existed.github.io/blog/2016/11/30/first-article/">
+  <link rel="canonical" href="https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
   
   <link href="/atom.xml" rel="alternate" title="Wang's Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +83,7 @@
   
   <header>
     
-      <h1 class="entry-title">First Article</h1>
+      <h1 class="entry-title">Linux Kernel Source Tree</h1>
     
     
       <p class="meta">
@@ -93,7 +92,7 @@
 
 
 
-<time class='entry-date' datetime='2016-11-30T18:39:13+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:39 pm</span></time>
+<time class='entry-date' datetime='2017-03-11T11:30:02+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:30 am</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="https://existed.github.io">Comments</a>
@@ -103,18 +102,125 @@
   </header>
 
 
-<div class="entry-content"><p><code>Hello
-</code></p>
+<div class="entry-content"><p>  内核源码树由很多目录组成，而大多数目录又包含很多子目录。
+  源码树根目录极其子目录如下表:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objective-c'><span class='line'>  <span class="bp">CGRect</span> <span class="n">screen</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIScreen</span> <span class="n">mainScreen</span><span class="p">]</span> <span class="n">bounds</span><span class="p">];</span>
-</span><span class='line'>  <span class="n">_window</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIWindow</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">screen</span><span class="p">];</span>
-</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="nl">setRootViewController</span><span class="p">:[[</span><span class="n">ViewController</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">]];</span>
-</span><span class='line'>  <span class="p">[</span><span class="n">_window</span> <span class="n">makeKeyAndVisible</span><span class="p">];</span>
-</span></code></pre></td></tr></table></div></figure>
+<!-- more -->
+
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">目录 </th>
+<th style="text-align:center;"> 描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">arch/ </td>
+<td style="text-align:center;"> 特定体系结构的源码</td>
+</tr>
+<tr>
+<td style="text-align:right;">block/ </td>
+<td style="text-align:center;"> 快设备I/O层</td>
+</tr>
+<tr>
+<td style="text-align:right;">crypto/ </td>
+<td style="text-align:center;"> 加密API</td>
+</tr>
+<tr>
+<td style="text-align:right;">Documentation/ </td>
+<td style="text-align:center;"> 内核源码文档</td>
+</tr>
+<tr>
+<td style="text-align:right;">drivers/ </td>
+<td style="text-align:center;"> 设备驱动程序</td>
+</tr>
+<tr>
+<td style="text-align:right;">firmaware/ </td>
+<td style="text-align:center;"> 某些驱动程序需要的设备固件</td>
+</tr>
+<tr>
+<td style="text-align:right;">fs/ </td>
+<td style="text-align:center;"> VFS和各种文件系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">include/ </td>
+<td style="text-align:center;"> 内核头文件</td>
+</tr>
+<tr>
+<td style="text-align:right;">init/ </td>
+<td style="text-align:center;"> 内核引导和初始化</td>
+</tr>
+<tr>
+<td style="text-align:right;">ipc/ </td>
+<td style="text-align:center;"> 进程间通信代码</td>
+</tr>
+<tr>
+<td style="text-align:right;">kernel/ </td>
+<td style="text-align:center;"> 核心子系统，例如调度程序</td>
+</tr>
+<tr>
+<td style="text-align:right;">lib/ </td>
+<td style="text-align:center;"> 通用内核函数</td>
+</tr>
+<tr>
+<td style="text-align:right;">mm/ </td>
+<td style="text-align:center;"> 内存管理子系统和VM</td>
+</tr>
+<tr>
+<td style="text-align:right;">net/ </td>
+<td style="text-align:center;"> 网络子系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">samples/ </td>
+<td style="text-align:center;"> 示例，示范代码</td>
+</tr>
+<tr>
+<td style="text-align:right;">scripts/ </td>
+<td style="text-align:center;"> 编译内核所用的脚本</td>
+</tr>
+<tr>
+<td style="text-align:right;">security/ </td>
+<td style="text-align:center;"> Linux安全模块</td>
+</tr>
+<tr>
+<td style="text-align:right;">sound/ </td>
+<td style="text-align:center;"> 语音子系统</td>
+</tr>
+<tr>
+<td style="text-align:right;">usr/ </td>
+<td style="text-align:center;"> 早期用户空间代码(所谓的initramfs)</td>
+</tr>
+<tr>
+<td style="text-align:right;">tools/ </td>
+<td style="text-align:center;"> 在Linux开发中有用的工具</td>
+</tr>
+<tr>
+<td style="text-align:right;">virt/ </td>
+<td style="text-align:center;"> 虚拟化基础基础结构</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+
+<pre><code>在源码树根目录由很多文件值得提及：
+- COPYING文件，是内核许可证(GNU GPL v2)；
+- CREDITS，是开发了很多内核代码的开发者列表；
+- MAINTAINERS，维护者列表，他们负责维护内核子系统和驱动程序；
+- Makefile，基本内核的Makefile。
+</code></pre>
+
+<a name="L........"></a>
+<h3>[参考]</h3>
+
+<ul>
+<li>《Linux内核设计与实现》（第三版）</li>
+</ul>
 
 </div>
 
@@ -131,12 +237,12 @@
 
 
 
-<time class='entry-date' datetime='2016-11-30T18:39:13+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:39 pm</span></time>
+<time class='entry-date' datetime='2017-03-11T11:30:02+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:30 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/others/'>others</a>
+    <a class='category' href='/blog/categories/linux/'>linux</a>
   
 </span>
 
@@ -145,7 +251,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="https://existed.github.io/blog/2016/11/30/first-article/" data-via="" data-counturl="https://existed.github.io/blog/2016/11/30/first-article/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/" data-via="" data-counturl="https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/" >Tweet</a>
   
   
   
@@ -154,8 +260,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2016/12/22/uitableview-and-uitableviewcontroller/" title="Previous Post: [笔记]UITableView &amp; UITableViewController">&laquo; [笔记]UITableView &amp; UITableViewController</a>
       
-        <a class="basic-alignment right" href="/blog/2016/12/03/xia-zhe-teng-uefiqi-dong-fedora22-plus-windows8-dot-1shuang-xi-tong/" title="Next Post: [瞎折腾] UEFI启动Fedora22+Windows8.1双系统">[瞎折腾] UEFI启动Fedora22+Windows8.1双系统 &raquo;</a>
       
     </p>
   </footer>
@@ -221,8 +327,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'https://existed.github.io/blog/2016/11/30/first-article/';
-        var disqus_url = 'https://existed.github.io/blog/2016/11/30/first-article/';
+        var disqus_identifier = 'https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/';
+        var disqus_url = 'https://existed.github.io/blog/2017/03/11/linux-kernel-source-tree/';
         var disqus_script = 'embed.js';
       
     (function () {
