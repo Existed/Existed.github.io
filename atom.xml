@@ -4,7 +4,7 @@
   <title><![CDATA[Wang's Blog]]></title>
   <link href="https://existed.github.io/atom.xml" rel="self"/>
   <link href="https://existed.github.io/"/>
-  <updated>2017-03-11T18:53:58+08:00</updated>
+  <updated>2017-03-11T21:50:12+08:00</updated>
   <id>https://existed.github.io/</id>
   <author>
     <name><![CDATA[Leon Wang]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Tips]]></title>
+    <link href="https://existed.github.io/blog/2017/03/11/octopress-tips/"/>
+    <updated>2017-03-11T21:18:28+08:00</updated>
+    <id>https://existed.github.io/blog/2017/03/11/octopress-tips</id>
+    <content type="html"><![CDATA[<a name="L........"></a>
+<h3>[参考]</h3>
+
+<ul>
+<li>生命之氢: <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html">Octopress 搭建流程 – Github Pages</a></li>
+<li>程序猎人的博客: <a href="http://programus.github.io/blog/2012/03/07/add-table-data-css-for-octopress/">为Octopress追加数据表格的CSS</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Linux Kernel Source Tree]]></title>
